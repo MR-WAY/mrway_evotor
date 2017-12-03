@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MrWay</string>
+    <string name="order_details">Детали заказа</string>
+    <string name="order_ready">Заказ собран</string>
+    <string name="pack_order">собрать заказ</string>
+</resources>

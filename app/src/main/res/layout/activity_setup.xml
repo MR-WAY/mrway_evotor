@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        tools:visibility="gone"
+        android:id="@+id/types_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Вид теятельности"
+                android:textAlignment="center"
+                android:textSize="38dp" />
+
+            <ImageView
+                android:id="@+id/cafe_iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-110dp"
+                android:src="@drawable/food" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-310dp"
+                android:src="@drawable/cafe" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-310dp"
+                android:src="@drawable/drug" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        tools:visibility="visible"
+        android:id="@+id/begin_rl"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_gr">
+
+        <ImageView
+            android:id="@+id/begin_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/begin" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/begin_iv"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:text="Все готово к работе!"
+            android:textSize="36dp" />
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_above="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/good" />
+
+    </RelativeLayout>
+
+</FrameLayout>
